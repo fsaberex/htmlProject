@@ -14,9 +14,15 @@ body{
 }
 
 .header{
+    border: solid green 2px;
     display: flex;
     margin: 10vw;
     flex-direction: column;
+}
+
+.subtitle{
+    font-size: larger;
+
 }
 
 .parent {
@@ -47,9 +53,11 @@ body{
 }
 
 .footer {
+    border: solid purple 2px;
     display: flex;
-    margin: 10vw;
+    margin: 5vw;
     flex-direction: column;
+    justify-content: left;
 }
 
 .chatlines{
@@ -57,7 +65,14 @@ body{
     flex-direction: column;
 }
 
+.chatblock{
+    display: flex;
+    flex-direction: row;
+}
+
+
 li {
+    align-content: flex-start;
     list-style-type: none;
   }
 
