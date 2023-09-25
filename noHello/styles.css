@@ -1,12 +1,7 @@
-.imageButton{
-    height: 200px;
-    width: 200px;
+.profileImage{
+    height: 50px;
+    width: 50px;
 }
-
-/* .parent{
-    display: flex;
-    justify-content:center;
-} */
 
 body{
     line-height: 1;
@@ -21,6 +16,7 @@ body{
 .header{
     display: flex;
     margin: 10vw;
+    flex-direction: column;
 }
 
 .parent {
@@ -49,6 +45,21 @@ body{
     flex-direction: column;
     padding: 50px;
 }
+
+.footer {
+    display: flex;
+    margin: 10vw;
+    flex-direction: column;
+}
+
+.chatlines{
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    list-style-type: none;
+  }
 
 /* 
 .wholesite{
