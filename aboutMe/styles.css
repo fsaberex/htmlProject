@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+html {
+    box-sizing: border-box;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.profileImage{
+    height: 700px;
+    width: 550px;
+}
+
+.flagImage{
+    display: flex;
+    height: 500px;
+    width: 750px;
+}
+
+.paragraph{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
