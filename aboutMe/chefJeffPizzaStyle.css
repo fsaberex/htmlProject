@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-image: url("https://www.dogtownpizza.com/wp-content/uploads/2019/03/pepperoni-pizza-background-768x576.jpg");
+    background-size: cover;
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+  }
+  
+html {
+    box-sizing: border-box;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.outer {
+    background: rgba(255,255,255,.5);
+}
+
+.inner {
+    opacity: 1;
+}
+
+.header{
+    border: solid green 2px;
+    display: flex;
+    margin: 5vw;
+    flex-direction: row;
+    width: 100%;
+}
+
+.footer{
+    border: solid purple 2px;
+    display: flex;
+    margin: 5vw;
+    flex-direction: row;
+}
+
+.parent {
+    border: solid red 2px;
+    display: flex;
+    flex-direction: column;
+    margin: 10vw;
+}
+
+.child {
+    border: solid blue 2px;
+    margin: 5px;
+}
+
+.child-1 {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.child-2 {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.image{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.bannerImage{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.paragraph{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.listHeader{
+    display: flex;
+    flex-direction: column;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav{
+    border: solid green 2px;
+    display: flex;
+    margin: 10vw;
+    justify-content: center;
+}
+
+.navLink{
+    padding-left: 10px;
+}
+
+.div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 650px) and (min-width: 375px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
