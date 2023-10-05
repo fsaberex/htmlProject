@@ -7,6 +7,7 @@ let button = document.getElementById('check');
 let count = 0;
 
 button.addEventListener('click', () => {
+    
     show = !show;
 
     let result = document.getElementById('orderResult');
