@@ -3,7 +3,7 @@ body {
     margin: 0;
     background-image: url("https://www.dogtownpizza.com/wp-content/uploads/2019/03/pepperoni-pizza-background-768x576.jpg");
     background-size: cover;
-    background-repeat: no-repeat, repeat;
+    background-repeat: repeat;
     background-position: center;
   }
   
@@ -113,7 +113,7 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-left: 10px;
+    padding-left: 10px
 }
 
 @media screen and (max-width: 650px) and (min-width: 375px) {
@@ -122,3 +122,7 @@ html {
       display: block;
     }
   }
+
+#orderResult {
+    display: none;
+}
