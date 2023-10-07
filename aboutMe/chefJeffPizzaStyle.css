@@ -24,7 +24,7 @@ html {
 }
 
 .header{
-    border: solid green 2px;
+    border: solid red 2px;
     display: flex;
     margin: 5vw;
     flex-direction: row;
@@ -32,7 +32,7 @@ html {
 }
 
 .footer{
-    border: solid purple 2px;
+    border: solid red 2px;
     display: flex;
     margin: 5vw;
     flex-direction: row;
@@ -46,7 +46,7 @@ html {
 }
 
 .child {
-    border: solid blue 2px;
+    border: solid red 2px;
     margin: 5px;
 }
 
@@ -99,7 +99,7 @@ html {
 }
 
 .nav{
-    border: solid green 2px;
+    border: solid red 2px;
     display: flex;
     margin: 10vw;
     justify-content: center;
@@ -116,6 +116,22 @@ html {
     padding-left: 10px
 }
 
+.textInput{
+    display: flex;
+    justify-content: center;
+    margin: 13px 0 0 10px;
+    max-width: 85px;
+    max-height: 25px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    margin: 13px 5px 0 10px;
+    max-width: 115px; 
+    max-height: 25px;
+}
+
 @media screen and (max-width: 650px) and (min-width: 375px) {
     .column {
       width: 100%;
@@ -123,6 +139,10 @@ html {
     }
   }
 
-#orderResult {
+#zipResult {
+    display: none;
+}
+
+#sadPizza{
     display: none;
 }

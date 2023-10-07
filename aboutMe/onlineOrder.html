@@ -17,12 +17,17 @@
     </div>  
     <div class="parent outer">
         <p class="paragraph">We offer delivery online or through the phone! Enter your delivery location so we can get started on prepping your pizza!</p>
-        <p>Zipcode</p>
-        <input id="zip" name="zipcode" type="text" pattern="[0-9]*">
-        <button id="check">Check for Delivery</button>
+        <div class="div">
+            <p>Zipcode</p>
+            <input id="zip" class="textInput" name="zipcode" type="text" pattern="[0-9]*">
+            <button id="check" class="button">Check for Delivery</button>
+        </div>
     </div> 
     <div>
-        <h2 id="orderResult">Your order was received!</h2>
+        <h2 id="zipResult"><img class="bannerImage" src="https://media.tenor.com/Uyv6QRYFGMsAAAAi/pizza-dancing-pizza.gif" alt="Cool dancing pepperoni pizza slice">Awesome! We deliver to your Area!</h2>
+    </div>
+    <div>
+        <h2 id="sadPizza"><img class="bannerImage" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.n-z2d5KAuZ_xUUaVswMr_wHaGL%26pid%3DApi&f=1&ipt=33dccb85bda2548cd5955a9772b21feea7cea7ec24ac2153cbde68fdc64f0c86&ipo=images" alt="Sad childlike drawing of a slice of pepperoni pizza">We're sorry, we are unable to deliver to your area.</h2>
     </div>
 
     <script src="onlineOrder.js"></script>

@@ -24,14 +24,14 @@ html {
 }
 
 .header{
-    border: solid green 2px;
+    border: solid blue 2px;
     display: flex;
     margin: 10vw;
     flex-direction: row;
 }
 
 .parent {
-    border: solid red 2px;
+    border: solid blue 2px;
     display: flex;
     flex-direction: column;
     margin: 10vw;
@@ -72,7 +72,7 @@ html {
 }
 
 .nav{
-    border: solid green 2px;
+    border: solid blue 2px;
     display: flex;
     margin: 10vw;
     justify-content: center;
