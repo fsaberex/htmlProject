@@ -49,24 +49,43 @@ if(discountCode === "code50"){
             let leftoverOutingsDiscount = (leftoverOutings * outingsPrice) * .5;
             if(leftoverTickets >= 1){
                 let leftoverTicketsDiscount = (ticketPrice * .5);
-                
+                let leftoverDiscount = leftoverOutingsDiscount + leftoverTicketsDiscount;
+                let totalDiscount = discountedItems + leftoverDiscount;
+                let totalPrice = totalDiscount + ((leftoverTickets - 1) * ticketPrice) + (leftoverOutings * outingsPrice);
+                let totalTax = totalPrice + (totalPrice * tax);
+
+                alert("Your total price is: $" + totalTax);
             }
+
+            else{
+
+            }
+        }
+
+        if(leftoverTickets === 2 && leftoverOutings < 1){
+
+        }
+
+        if(leftoverNights === 2 && (leftoverOutings < 1 || leftoverTickets < 1)){
+
         }
     }
 
     else{
         let leftoverTotal = ((leftoverTickets * ticketPrice) + (leftoverNights * hotelNightPrice)  + (leftoverOutings * outingsPrice)) * .5;
 
-        let totalPrice = (leftoverTotal + discountedItems) + ((leftoverTotal + discountedItems) * tax)
+        let totalPrice = (leftoverTotal + discountedItems); 
+        let totalTax = totalPrice + (totalPrice * tax);
 
-        alert("Your total price is: $" + totalPrice);
+        alert("Your total price is: $" + totalTax);
     }
 
 }
 
 else{
-    let totalPrice = ((tickets * ticketPrice) + (hotelNights * hotelNightPrice) + (outings * outingsPrice)) + (((tickets * ticketPrice) + (hotelNights * hotelNightPrice) + (outings * outingsPrice)) * tax);
+    let totalPrice = ((tickets * ticketPrice) + (hotelNights * hotelNightPrice) + (outings * outingsPrice));
+    let totalTax = totalPrice + (totalPrice * tax);
 
-    alert("Your total price is: $" + totalPrice);
+    alert("Your total price is: $" + totalTax);
 }
 
